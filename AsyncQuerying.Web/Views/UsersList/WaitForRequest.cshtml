@@ -1,0 +1,27 @@
+﻿@model UsersListModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ожидайте результата запроса …</title>
+</head>
+<body>
+    Ожидайте результата запроса …
+
+    @Html.Partial("WaitForRequestFilter", Model.Filter)
+
+    <div class="errorsholder hidden">
+        <div class="alert"></div>
+        <a class="" href="~/">Назад</a>
+    </div>
+
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/app/users/userslist.js"></script>
+</body>
+</html>

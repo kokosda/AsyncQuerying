@@ -1,0 +1,15 @@
+﻿@model UserFilterModel
+
+<form class="col-md-6" method="post" enctype="application/x-www-form-urlencoded" novalidate="novalidate">
+    <div class="form-group">
+        <div class="alert alert-info">
+            Для поиска пользователей введите значение в поле и нажмите «Найти»
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="exampleInputEmail1">Имя</label>
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-info">Найти</button>
+</form>
